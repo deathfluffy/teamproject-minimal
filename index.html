@@ -20,115 +20,77 @@
     <title>Minimal</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <svg class="icon-logo" width="127" height="16">
-          <use href="./img/icons.svg#icon-logo"></use>
-        </svg>
-        <ul class="list">
-          <li>About us</li>
-          <li>Our products</li>
-          <li>Prices</li>
-          <li>Bestsellers</li>
-          <li>Reviews</li>
-          <li>Contacts</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-first">
-        <h1>Modern and minimalist furniture for you</h1>
-        <p>
-          Add a touch of elegance to your space with handcrafted furniture
-          pieces
+    <section>
+      <div class="secondary-container">
+        <h2 class="title-subscribe">Newsletter</h2>
+        <p class="modal-described">
+          Every week we will send you new designs and information about sales.
         </p>
-        <button>Subscribe</button>
-      </section>
-      <section class="section-second">
-        <h2>About us</h2>
-        <h3>Our сraftsmanship: сreating unique handmade furniture</h3>
-        <p>
-          Discover the inspiration behind our modern and minimalist designs, and
-          see how we bring them to life through our skilled craftsmanship.
-        </p>
-
-        <span>5+</span>
-        <p>Years of experience creating handcrafted furniture</p>
-        <span>100%</span>
-        <p>Sustainably sourced materials used in all of our furniture</p>
-        <span>500+</span>
-        <p>Unique furniture designs crafted by our skilled artisans</p>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Chairs Tables Dressers Sofas Price</h2>
-        <ul>
-          <li>Chairs</li>
-          <li>from 200₴</li>
-          <li>Tables</li>
-          <li>from 250₴</li>
-          <li>Dressers</li>
-          <li>from 300₴</li>
-          <li>Sofas</li>
-          <li>from 500₴</li>
-        </ul>
-      </section>
-      <section>
-        <h2>OUR PRODUCTS</h2>
-        <ul>
-          <li>
-            <img
-              srcset="
-                ./images/product-5-min-1x.jpg 1x,
-                ./images/product-5-min-2x.jpg 2x
-              "
-              src="./images/product-5-min-1x.jpg"
-              alt="empty-picture"
-              width="312"
+        <form class="form-modal" autocomplete="off">
+          <div class="data-email-container">
+            <label class="modal-label" for="user-name">Name:</label>
+            <div class="wrapper">
+              <input
+                required
+                type="text"
+                class="input-modal"
+                id="user-name"
+                placeholder="Name"
+                name="Name"
+                pattern=".{2,16}"
+              />
+              <svg width="18" height="18" class="icon">
+                <use
+                  href="./images/icons.svg#icon-exclamation-point-in-circle"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-email-container">
+            <label class="modal-label" for="user-email">Email:</label>
+            <div class="wrapper">
+              <input
+                required
+                type="email"
+                class="input-modal"
+                id="user-email"
+                placeholder="Email"
+                name="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+              <svg width="18" height="18" class="icon">
+                <use
+                  href="./images/icons.svg#icon-exclamation-point-in-circle"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-form">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              class="visually-hidden input-check"
             />
-            <p>Minimalist storage solutions</p>
-          </li>
-          <li>
+            <label for="user-privacy" class="data-label">
+              <span class="modal-span">
+                <svg class="check" width="13" height="13">
+                  <use href="./images/icons.svg#icon-check1"></use>
+                </svg>
+              </span>
+              Agree to subscribe to the newsletter
+            </label>
+          </div>
+          <button type="submit" class="button-modal">Send</button>
+          <div class="img-container">
             <img
-              srcset="
-                ./images/product-6-min-1x.jpg 1x,
-                ./images/product-6-min-2x.jpg 2x
-              "
-              src="./images/product-6-min-1x.jpg"
-              alt="empty-picture"
-              width="312"
+              src="https://ae01.alicdn.com/kf/HTB1VjmvMVXXXXb1XFXXq6xXFXXXz/Men-s-T-shirts-Quick-Dry-Breathable-Top-O-Neck-Compression-Shirt-T-Shirt.jpg"
+              alt="tshort"
             />
-            <p>Handcrafted minimalist seating</p>
-          </li>
-          <li>
-            <img
-              srcset="
-                ./images/product-7-min-1x.jpg 1x,
-                ./images/product-7-min-2x.jpg 2x
-              "
-              src="./images/product-7-min-1x.jpg"
-              alt="empty-picture"
-              width="312"
-            />
-            <p>Sleek and simple tables</p>
-          </li>
-          <li>
-            <img
-              srcset="
-                ./images/product-8-min-1x.jpg 1x,
-                ./images/product-8-min-2x.jpg 2x
-              "
-              src="./images/product-8-min-1x.jpg"
-              alt="empty-picture"
-              width="312"
-            />
-            <p>Minimalist seating for every space</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Bestsellers</h2>
-      </section>
-    </main>
-    <footer></footer>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
